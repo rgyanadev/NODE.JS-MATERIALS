@@ -1,23 +1,48 @@
-// Normal function declaration
+// Basic functions
+function greet() {
+    console.log("Hello!");
+}
+greet();
+
+
+// Fuction with parameters
+function greet(name) {
+    console.log("Hello, " + name);
+}
+greet("Alice");
+greet("Bob");
+
+
+// Function with return value
 function add(a, b) {
     return a + b;
 }
-
 let result = add(5, 3);
 console.log(result);
 
 
-// Arrow function expression
-let multiply = (x, y) => {
-    return x * y;
-}
-let result2 = multiply(39, 342);
-console.log(result2);
-
-
-// Function Expression
-let divide = function (p, q) {
-    return p / q;
+// Function expression
+const multiply = function (a, b) {
+    return a * b;
 };
-let result3 = divide(10, 2);
-console.log(result3);
+console.log(multiply(4, 5));
+
+
+// Arrow function expression
+const add1 = (a, b) => {
+    return a + b;
+};
+console.log(add1(2, 3));
+
+// Arrow function with implicit return
+const add2 = (a, b) => a + b;
+console.log(add2(2, 3));
+
+
+// Default parameters
+function greet(name = "Guest") {
+    console.log("Hello, " + name);
+}
+greet();
+greet("John");
+
