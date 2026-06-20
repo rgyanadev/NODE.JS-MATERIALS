@@ -16,3 +16,8 @@ fs.appendFile('greeting.txt', `Hello, ${user.username}! Welcome to Node.js!`, ()
     console.log("Greeting message has been written to greeting.txt");
 });
 // The appendFile method is used to write data to a file. If the file does not exist, it will be created. If the file already exists, the new data will be appended to the end of the file. The first argument is the name of the file, the second argument is the data to be written, and the third argument is a callback function that will be executed once the writing is complete.
+
+console.log("OS Info:");
+console.log(os);
+console.log("FS Info:");
+console.log(fs);
