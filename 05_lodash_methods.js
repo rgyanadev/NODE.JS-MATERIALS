@@ -2,7 +2,6 @@
 
 const _ = require('lodash');
 
-
 let data = ['apple', 'apple', 1, 1, 2, 3, 'mohanan', 'vishal', 'mohanan', 'vishal', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // _.uniq() method is used to remove duplicate values from an array and return a new array with unique values.
